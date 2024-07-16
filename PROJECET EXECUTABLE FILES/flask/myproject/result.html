@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Consumption Analysis</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://i.pcmag.com/imagery/articles/026vAfBApaHcSG9qzOzlMoF-4.fit_lim.size_938x.jpg');
+            font-family: 'serif';
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+
+        input {
+            font-size: 1.3em;
+            width: 30%;
+            text-align: left;
+        }
+        input::placeholder {
+            text-align: left;
+        }
+
+        button {
+            outline: 0;
+            border: 0;
+            background-color: darkred;
+            color: white;
+            width: 50px;
+            height: 30px; 
+            cursor: pointer; 
+        }
+
+        .idiv {
+            text-align: left;
+            padding: 20px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="idiv">
+        <h1>Power Consumption Analysis</h1>
+        <br>
+        <!-- Displaying prediction result dynamically -->
+        <h1>Global active power is {{ prediction_text}}</h1>
+        <br>
+        <br>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Power Consumption Analysis</title>
+        <style>
+        body
+        {
+            background-image: url('https://i.pcmag.com/imagery/articles/026vAfBApaHcSG9qzOzlMoF-4.fit_lim.size_938x.jpg');
+            font-family:'serif';
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        input{
+        font-size: 1.3 em;
+        width:30%;
+        text-align: left;
+        }
+        input::placeholder{
+            text-align:left;
+        }
+        button{
+            outline: 0;
+            border: 0;
+            background-color: darkred;
+            color: white;
+            width:100px;
+            height:20px;
+            border-radius: 6px;
+        }
+        </style>
+    </head>
+    <body>
+        <br>
+        <h1>Power Consumption Analysis</h1>
+        <form class="page" action="./predict" method="POST">
+            &nbsp;&nbsp;<input type="text" name="Global Reactive Power" placeholder="Enter the Global reactive power value(0-1)">
+            <br>
+            <br>
+            &nbsp;&nbsp;<input type="text" name="Global Intensity" placeholder="Enter the Global intensity value">
+            <br>
+            <br>
+            &nbsp;&nbsp;<input type="text" name="Submeter Reading 1" placeholder="Enter the Submeter Reading1">
+            <br>
+            <br>
+            &nbsp;&nbsp;<input type="text" name="Submeter Reading 2" placeholder="Enter the Submeter Reading2">
+            <br>
+            <br>
+            &nbsp;&nbsp;<input type="text" name="Submeter Reading 3" placeholder="Enter the Submeter Reading3">
+            <br>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="mybutton">predict</button>
+        </form>
+    </body>
+</html>
